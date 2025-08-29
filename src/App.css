@@ -1,0 +1,605 @@
+/* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Fascinate&family=Fascinate+Inline&family=Limelight&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Poiret+One&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+}
+main {
+  /* padding: 10px; */
+  /* max-width: 960px; */
+  margin: 0 auto;
+}
+
+header div.wolf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-family: "Bebas Neue"; */
+  margin-bottom: 50px;
+  /* margin: 15px 15px 20px 15px; */
+  background-color: #364037;
+  padding: 15px 15px 30px 15px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 1000;
+  font-size: 1.5rem;
+  color: #f4dec9;
+  margin-right: 40px;
+}
+
+header a:hover {
+  color: #bb5a3a;
+}
+
+header a.logo {
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-left: 40px;
+
+  font-family: "Fascinate Inline", system-ui;
+  /* color: #bb5a3a; */
+  color: #f4dec9;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header a.logo:hover {
+  color: #bb5a3a;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header div.tagline {
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+  font-size: 1.2rem;
+  color: #364037;
+  margin-top: -50px;
+  background-color: #f4dec9;
+   letter-spacing: 3px;
+  margin-bottom: 50px;
+}
+
+/* for posts page */
+div.post {
+  display: grid;
+  grid-template-columns: 0.9fr 1.2fr;
+  gap: 20px;
+  margin-bottom: 30px;
+  font-family: "Abhaya Libre", serif;
+  border: 2px solid #7d7c7b;
+  margin: 50px;
+  background: #fbf4ed;
+  /* border-radius: 12px; */
+  overflow: hidden;
+}
+div.hover {
+  margin-top: 20px;
+}
+div.post:hover {
+  color: #bb5a3a;
+}
+div.post:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post div.img {
+  overflow: hidden; /* prevents image from overflowing when zoomed */
+}
+.post .img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease; /* smooth animation */
+}
+
+.post:hover .img img {
+  transform: scale(1.1); /* zoom-in */
+}
+
+div.text p.summary {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: #545252;
+}
+
+
+/* for mobile */
+@media screen and (max-width: 768px) {
+  div.post {
+    grid-template-columns: 1fr;
+  }
+
+
+/* mobile */
+
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;   /* stop right-side scroll */
+  font-family: "Abhaya Libre", serif;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* --- Images --- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Header --- */
+header .wolf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #364037;
+  padding: 12px 16px;
+}
+
+header a {
+  text-decoration: none;
+  color: #f4dec9;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px;
+  
+}
+
+header a.logo {
+  font-family: "Fascinate Inline", system-ui;
+  font-size: 1.5rem;
+  margin-right: auto;
+  margin: 5px;
+}
+
+header nav {
+  display: flex;
+  gap: 12px;
+}
+
+header div.tagline {
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  background-color: #f4dec9;
+  color: #364037;
+  padding: 8px;
+}
+
+/* --- Post Cards --- */
+div.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 16px;
+  padding: 12px;
+  border: 2px solid #7d7c7b;
+  background: #fbf4ed;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+div.post:hover {
+  color: #bb5a3a;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post .img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.post:hover .img img {
+  transform: scale(1.05);
+}
+
+div.text h2 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+div.text p.summary {
+  font-family: "Jost", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+  color: #545252;
+}
+
+/* --- Buttons / Inputs --- */
+input, button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 8px 0;
+}
+.form{
+  max-width: 400px;
+    width: 100%;
+ 
+}
+input {
+  border: 1px solid #f4dec9;
+}
+
+input:focus {
+  border-color: #bb5a3a;
+  box-shadow: 0 0 5px rgba(187, 90, 58, 0.5);
+  background-color: #fff8f3;
+}
+
+button {
+  background: linear-gradient(135deg, #f4a261, #bb5a3a);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* --- Footer --- */
+.footer {
+  background: linear-gradient(135deg, #f4a261, #bb5a3a);
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  font-size: 1rem;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 15rem;
+}
+
+/* --- Upward Arrow --- */
+.upword {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #f4a261, #bb5a3a);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.upword:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* --- Responsive Tweaks --- */
+
+/* Tablet (≥768px) */
+@media (min-width: 768px) {
+  div.post {
+    grid-template-columns: 0.9fr 1.2fr;
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
+  header a {
+    font-size: 1.3rem;
+  }
+}
+
+/* Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  div.post {
+    max-width: 900px;
+  }
+}
+
+
+
+/*  */
+
+
+
+}
+
+
+/*  */
+
+
+
+div.post div.text h2 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 450;
+}
+
+div.post div.text a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+div.post p.info {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #888;
+  display: flex;
+  gap: 5px;
+}
+
+.post p.info a.author {
+  color: #4b4b4b;
+}
+.post p.summary {
+  margin: 10px 0;
+  line-height: 1.4rem;
+}
+
+/* for login n register */
+form.login,
+form.register {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: "Abhaya Libre", serif;
+  color: #bb5a3a;
+}
+
+form.footer {
+  margin-top: 40px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #f4dec9;
+  border-radius: 4px;
+  color: #333;
+  outline: none;
+}
+input:hover {
+  border: 1px solid #bb5a3a; /* hover effect */
+}
+
+input:focus {
+  border: 1px solid #bb5a3a; /* active when clicked */
+  box-shadow: 0 0 5px rgba(187, 90, 58, 0.5); /* glow effect */
+  background-color: #fff8f3; /* slight background change */
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f4dec9;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+  color: #fff;
+  background: linear-gradient(135deg, #f4a261, #bb5a3a);
+}
+
+button:hover {
+  /* reverse gradient */
+  transform: translateY(-3px) scale(1.05); /* lift + zoom */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+  transform: scale(0.97); /* click press effect */
+}
+form.login h1,
+form.register h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+
+/* for css to single post-pages */
+
+div.post-page {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Abhaya Libre", serif;
+  color: #bb5a3a;
+  padding-bottom: 20px;
+  background-color: #fdeee1;
+}
+div.post-page div.img {
+  /* max-height: 600px; */
+  /* width: 600px; */
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 40px;
+}
+
+div.post-page div.img img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+div.post-page div.img img:hover {
+  transform: scale(1.1); /* zoom-in effect on hover */
+  transition: transform 0.5s ease-out; /* smooth animation */
+}
+
+div.post-page a {
+  /* color:#524343; */
+  text-decoration: none;
+}
+
+div.post-page .content {
+  text-align: justify;
+  margin: 30px;
+  line-height: 1.6rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+div.post-page p {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  line-height: 1.6rem;
+  color: #333;
+  font-size: 1.3rem;
+  /* font-weight: bold; */
+}
+div.post-page h1 {
+  text-align: center;
+  /* margin: 10px 0 5px; */
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bolder;
+}
+div.post-page div.author {
+  text-align: center;
+  font-size: 0.6rem;
+  color: #5a5858;
+  font-weight: bold;
+}
+div.post-page p.time {
+  text-align: center;
+  display: block;
+  font-size: 0.8rem;
+  color: #5e5d5d;
+
+  font-weight: bold;
+}
+
+/* for edit post */
+div.edit-post {
+  text-align: center;
+  margin: 5px;
+}
+div.edit-post a.edit-btn {
+  font-family: "Abhaya Libre", serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #f4a261, #bb5a3a);
+}
+div.edit-post a.edit-btn:hover {
+  background: linear-gradient(135deg, #f4a261, #bb5a3a);
+  transform: translateY(-3px) scale(1.05); /* lift + zoom */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+a svg {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+/* for edit form */
+div.edit-form {
+  font-family: "Abhaya Libre", serif;
+  color: #5e5d5d;
+  display: grid;
+  justify-content: center;
+  margin-left: 5rem;
+  /* width: 600px; */
+}
+
+div.edit-form button {
+  margin-bottom: 30px;
+}
+div.edit-form input {
+  color: #5a5858;
+}
+
+/* footer */
+.footer {
+  margin-top: auto; /* Push footer to bottom */
+  background: linear-gradient(135deg, #f4a261, #bb5a3a);
+  color: #fff;
+  text-align: center;
+  padding: 20px 20px;
+  font-family: "Abhaya Libre", serif;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 17.1rem;
+
+}
+
+.footer span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Fascinate Inline", system-ui;
+}
+
+/* upword arrow */
+.upword {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(135deg, #f4a261, #bb5a3a);
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+  z-index: 1000;
+}
+
+.upword:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.upword svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+}
