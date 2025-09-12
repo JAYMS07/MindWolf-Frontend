@@ -13,7 +13,7 @@ export default function PostPage() {
 
   useEffect(() => {
     if (!id) return;
-    fetch(`mindwolf.up.railway.app${id}`)
+    fetch(`http://mindwolf.up.railway.app/post/${id}`)
       .then((response) => {
         if (!response.ok) {
           console.error("Fetch failed with status:", response.status);
