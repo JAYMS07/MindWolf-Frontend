@@ -7,7 +7,7 @@ export default function IndexPages() {
 
   // Fetch posts from the database
   useEffect(() => {
-    fetch("http://localhost:5000/post").then((response) => {
+    fetch("http://mindwolf.up.railway.app/post").then((response) => {
       response.json().then((posts) => {
         setPosts(posts);
       });
