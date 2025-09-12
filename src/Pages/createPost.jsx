@@ -39,7 +39,7 @@ export default function CreatePost() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/post", {
+      const response = await fetch("http://mindwolf.up.railway.app/post", {
         method: "POST",
         body: data,
         credentials: "include", // 👈 send cookies if logged in
