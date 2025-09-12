@@ -12,19 +12,9 @@ export default function EditPost() {
   const [cover, setCover] = useState(""); // for preview (old or new)
   const [redirect, setRedirect] = useState(false);
 
-  // useEffect(() => {
-  //   fetch("http://localhost:5000/post/" + id).then((response) => {
-  //     response.json().then((postInfo) => {
-  //       setTitle(postInfo.title);
-  //       setContent(postInfo.content);
-  //       setSummary(postInfo.summary);
-  //       setCover("http://localhost:5000/" + postInfo.cover); // existing cover
-  //     });
-  //   });
-  //   [id];
-  // });
+  
   useEffect(() => {
-  fetch("http://localhost:5000/post/" + id)
+  fetch("mindwolf.up.railway.app" + id)
     .then((response) => response.json())
     .then((postInfo) => {
       setTitle(postInfo.title);
