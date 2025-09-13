@@ -9,7 +9,7 @@ export default function Header() {
   const { userInfo, setUserInfo } = useContext(UserContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/profile", {
+    fetch("http://mindwolf.up.railway.app/profile", {
       credentials: "include",
     })
       .then(async (res) => {
