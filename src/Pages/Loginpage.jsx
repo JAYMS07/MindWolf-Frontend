@@ -20,7 +20,7 @@ export default function LoginPage() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:5000/login", {
+      const res = await fetch("http://mindwolf.up.railway.app/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username: username.trim(), password: password }),
