@@ -5,6 +5,7 @@ Built as my very first MERN stack project, MindWolf was a challenging yet reward
 
 📸 Preview
 
+![Uploading MERN PROJ - Visual Studio Code 05-09-2025 12_36_02.png…]()
 
 
 🚀 Quick Navigation
