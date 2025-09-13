@@ -19,7 +19,7 @@ export default function Post({
       <div className="img">
         {/* <img src="icons/codeeditor.jpg" /> */}
         <Link to={`/post/${_id}`}>
-          <img src={"http://localhost:5000/" + cover} alt="" />
+          <img src={"http://mindwolf.up.railway.app/" + cover} alt="" />
         </Link>
       </div>
 
