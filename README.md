@@ -5,7 +5,8 @@ Built as my very first MERN stack project, MindWolf was a challenging yet reward
 
 📸 Preview
 
-![Uploading MERN PROJ - Visual Studio Code 05-09-2025 12_36_02.png…]()
+![MindWolf Homepage](<img width="1844" height="906" alt="MERN PROJ - Visual Studio Code 05-09-2025 12_36_02" src="https://github.com/user-attachments/assets/32187b07-c044-421a-a11a-453365f6305c" />
+)
 
 
 🚀 Quick Navigation
