@@ -7,7 +7,7 @@ export default function RegisterPage() {
   async function register(e) {
     e.preventDefault();
     // Perform registration logic here
-    const response=await fetch("mindwolf.up.railway.app", {
+    const response=await fetch("http://mindwolf.up.railway.app/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
